@@ -1,0 +1,4 @@
+.ENV
+.env
+node_modules
+.vercel_ignore
