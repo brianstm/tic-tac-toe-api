@@ -27,8 +27,9 @@ app.get("/", async (req, res) => {
 })
 
 app.post("/new-game", async (req, res) => {
+  let client
   try {
-    let client = await MongoClient.connect(process.env.MONGODB_URI, {
+    client = await MongoClient.connect(process.env.MONGODB_URI, {
       useUnifiedTopology: true
     })
     const {
@@ -117,8 +118,9 @@ app.post("/new-game", async (req, res) => {
 })
 
 app.post("/join-game", async (req, res) => {
+  let client
   try {
-    let client = await MongoClient.connect(process.env.MONGODB_URI, {
+    client = await MongoClient.connect(process.env.MONGODB_URI, {
       useUnifiedTopology: true
     })
     const { gameCode, player0, player1 } = req.body
@@ -178,8 +180,9 @@ app.post("/join-game", async (req, res) => {
 })
 
 app.get("/game/:gameCode", async (req, res) => {
+  let client
   try {
-    let client = await MongoClient.connect(process.env.MONGODB_URI, {
+    client = await MongoClient.connect(process.env.MONGODB_URI, {
       useUnifiedTopology: true
     })
     const { gameCode } = req.params
@@ -226,8 +229,9 @@ app.get("/game/:gameCode", async (req, res) => {
 })
 
 app.post("/play", async (req, res) => {
+  let client
   try {
-    let client = await MongoClient.connect(process.env.MONGODB_URI, {
+    client = await MongoClient.connect(process.env.MONGODB_URI, {
       useUnifiedTopology: true
     })
     const { gameCode, row, col } = req.body
