@@ -11,7 +11,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://127.0.0.1:5173",
-      "https://tttapp.vercel.app"
+      "https://tttweb.vercel.app"
     ],
     credentials: true
   })
