@@ -37,11 +37,13 @@
 ```js
 // (POST) /new-game
 {
-    "size": "3",              // grid size
-    "disappearing": false,    // disappearing true or false
-    "disappearing_rounds": 0, // disappear in amount of rounds
-    "player_0": "X",          // player 0's icon
-    "player_1": "O"           // player 1's icon
+    "size": "3",              // Grid size
+    "disappearing": false,    // Disappearing true or false
+    "disappearing_rounds": 0, // Disappear in amount of rounds
+    "player_0": "X",          // Player 0's icon
+    "player_1": "O"           // Player 1's icon
+    "player_0_name": "",      // (OPTIONAL) Player 0's name
+    "player_1_name": "",      // (OPTIONAL) Player 1's name
 }
 ```
 
@@ -64,5 +66,43 @@
     "gameCode": "ASDASDASDA",   // Game Code
     "row": 1,                   // Row (array starts from 0)
     "col": 1                    // Column (array starts from 0)
+}
+```
+
+### Returns
+
+All the API above will return all the data in similar ways, which will always contain these datas:
+
+```js
+{
+    "gameCode": "ASDASDASDA",   // Game Code
+    "size": "3",                // Grid size
+    "board": [                  // Board array of array
+        [
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null
+        ],
+        [
+            null,
+            null,
+            null
+        ]
+    ],
+    "currentPlayer": "1",       // Current Player
+    "winner": null,             // Winner
+    "winningLine": [],          // Winning Line will return the Winning Line of row and col
+    "player_0": "X",            // Player 0's icon
+    "player_0_name": "",        // Player 0's name
+    "player_1": "O",            // Player 1's icon
+    "player_1_name": "",        // Player 0's name
+    "disappearing": false,      // Disappearing true or false
+    "disappearing_rounds": 0,   // Disappear in amount of rounds
+    "rounds": []                // Rounds array of objects containing row, col and player
 }
 ```
