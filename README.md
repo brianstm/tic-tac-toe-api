@@ -2,6 +2,8 @@
 
 ## URL: [Tic Tac Toe](https://tttweb.vercel.app)
 
+## URL: [Tic Tac Toe API](https://tttapi.vercel.app)
+
 ### Usage:
 
 1. Clone the repository:
@@ -24,7 +26,8 @@
 
 ### See also
 
-[![GitHub](https://img.shields.io/badge/GitHub-Tic%20Tac%20Toe%20app-181717.svg?logo=github)](https://github.com/brianstm/tic-tac-toe.git)
+[![GitHub](https://img.shields.io/badge/GitHub-Tic%20Tac%20Toe%20-181717.svg?logo=github)](https://github.com/brianstm/tic-tac-toe.git)
+[![GitHub](https://img.shields.io/badge/GitHub-Tic%20Tac%20Toe%20API-181717.svg?logo=github)](https://github.com/brianstm/tic-tac-toe-api.git)
 
 > [!IMPORTANT]
 > index.js is to run on local machine, index_prod.js is to run in vercel
