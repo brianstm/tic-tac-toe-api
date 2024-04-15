@@ -2,13 +2,29 @@
 
 ## URL: [Tic Tac Toe](https://tttweb.vercel.app)
 
-### TO USE:
+### Usage:
 
-> git clone https://github.com/brianstm/tic-tac-toe-api.git
+1. Clone the repository:
 
-> npm install
+   ```bash
+   git clone https://github.com/brianstm/tic-tac-toe-api.git
+   ```
 
-> node index.js
+2. Install the required dependencies:
+
+   ```bash
+    npm install
+   ```
+
+3. Run the API Locally:
+   ```bash
+   node index.js
+   ```
+   The API will run on http://localhost:8000 by default unless stated in the .env file
+
+### See also
+
+[![GitHub](https://img.shields.io/badge/GitHub-Tic%20Tac%20Toe%20app-181717.svg?logo=github)](https://github.com/brianstm/tic-tac-toe.git)
 
 > [!IMPORTANT]
 > index.js is to run on local machine, index_prod.js is to run in vercel
@@ -16,7 +32,7 @@
 > [!NOTE]
 > Create a Database in Monggodb and copy the uri into the .env file, example: [Example Env](.env.example)
 
-### API CALLS:
+### API Calls:
 
 ```js
 // (POST) /new-game

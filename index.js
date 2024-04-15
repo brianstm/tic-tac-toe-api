@@ -22,7 +22,7 @@ app.use(
 const uri = process.env.MONGODB_URI
 let client
 
-const port = process.env.PORT
+const port = process.env.PORT || 8000
 app.listen(port, async () => {
   client = new MongoClient(uri)
   await client.connect()
