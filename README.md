@@ -1,21 +1,22 @@
 # API For Tic Tac Toe Game
 
-URL: [Tic Tac Toe](https://tttweb.vercel.app)
+## URL: [Tic Tac Toe](https://tttweb.vercel.app)
 
-TO USE:
+### TO USE:
 
 > git clone https://github.com/brianstm/tic-tac-toe-api.git
+
 > npm install
+
 > node index.js
 
 > [!IMPORTANT]
-> index.js is to run on local machine
-> index_prod.js is to run in vercel
+> index.js is to run on local machine, index_prod.js is to run in vercel
 
 > [!NOTE]
 > Create a Database in Monggodb and copy the uri into the .env file, example: [Example Env](.env.example)
 
-API CALLS:
+### API CALLS:
 
 ```js
 // (POST) /new-game
