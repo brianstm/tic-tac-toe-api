@@ -2,9 +2,22 @@
 
 URL: [Tic Tac Toe](https://tttweb.vercel.app)
 
+TO USE:
+
+> git clone https://github.com/brianstm/tic-tac-toe-api.git
+> npm install
+> node index.js
+
+> [!IMPORTANT]
+> index.js is to run on local machine
+> index_prod.js is to run in vercel
+
+> [!NOTE]
+> Create a Database in Monggodb and copy the uri into the .env file, example: [Example Env](.env.example)
+
 API CALLS:
 
-```json
+```js
 // (POST) /new-game
 {
     "size": "3",              // grid size
@@ -15,11 +28,11 @@ API CALLS:
 }
 ```
 
-```json
+```js
 // (GET) /game/:game_code
 ```
 
-```json
+```js
 // (POST) /join-game
 {
     "gameCode": "ASDASDASDA",   // Game Code
@@ -28,7 +41,7 @@ API CALLS:
 }
 ```
 
-```json
+```js
 // (POST) /play
 {
     "gameCode": "ASDASDASDA",   // Game Code
